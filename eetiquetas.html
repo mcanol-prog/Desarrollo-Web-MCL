@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estructura base</title>
+
+    <!-- FontAwesome: Biblioteca de iconos vectoriales escalables que pueden insertarse  en páginas web, aplicaciones móviles y proyectos de interfaz de usuario. -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Uso de etiquetas HTML</h1>
+      <!-- Encabezado de nivel 1 -->
+      <p>
+        Etiquetas en HTML: Las tags, o etiquetas HTML, son códigos utilizados
+        para dar instrucciones al navegador sobre cómo mostrar ese elemento.
+      </p>
+      <!--Parráfo: Breve introducción de la página -->
+    </header>
+
+    <main>
+      <!-- Información principal de la página -->
+      <h2>Encabezado de nivel 2</h2>
+      <p>Ejemplo del uso jerarquico de etiquetas para encabezados</p>
+
+      <h2>Segundo encabezado de nivel 2</h2>
+      <h3>Primer encabezado de nivel 3</h3>
+      <p>
+        main: Contenido principal único (equivalente al contenido central de un
+        libro).
+      </p>
+
+      <h2>Tercer encabezado de nivel 2</h2>
+
+      <p>Pasatiempos:</p>
+      <ul>
+        <!-- Lista desordenada -->
+        <li>Leer</li>
+        <!-- Primer elementos de la lista -->
+        <li>Juegos de mesa</li>
+        <ul>
+          <li>Ajedrez</li>
+          <li>Catan</li>
+          <li>Cartas</li>
+        </ul>
+        <li>Dibujar</li>
+        <li>Correr</li>
+      </ul>
+
+      <p>Otros pasatiempos:</p>
+      <ol>
+        <!-- Lista ordenada -->
+        <li>Hacer ejercicio</li>
+        <!-- Primer elemento de la lista -->
+        <li>Nadar</li>
+        <!-- Segundo elemento de la lista -->
+        <li>Anime:</li>
+        <ol type="a" start="2">
+          <!-- Atributo type: define el tipo de lista ordenada y el atributo start define dónde inicia la lista -->
+          <li>Ataque a los titanes</li>
+          <li>One piece</li>
+          <li>Naruto</li>
+          <li>Frieren</li>
+        </ol>
+        <li>Cocinar</li>
+      </ol>
+
+      <!-- Ejercicio: Hacer una lista de al menos 3 niveles -->
+
+      <img src="assets\img\logo.png" alt="" />
+      <!-- alt="": Elemento es decorativo (no aporta información)-->
+      <img
+        src="assets\img\logo.png"
+        alt="Áreas académicas de la escuela: programación, seguridad, procesos y calidad de software"
+      />
+      <!-- alt="Descripción del elemento" -->
+
+      <!-- ---------------- -->
+
+      <!-- Iconos decorativos: No aportan información, sin embargo los lectores de pantalla  pueden anunciar caracteres no deseados (por ejemplo, “museo” o “envelope”) o leer el nombre del icono de Font Awesome, generando ruido y confusión.-->
+
+      <i class="fas fa-museum"></i>
+      <!-- Icono no accesible -->
+
+      <i class="fas fa-museum" aria-hidden="true"></i>
+      <!-- Icono accesible -->
+      <!-- aria-hidden: Atributo de accesibilidad de ARIA (Accessible Rich Internet Applications). aria-hidden="true": Indica a los lectores de pantalla y otras tecnologías de asistencia que un elemento debe ser ignorado. -->
+
+      <!-- Audio accesible
+      Sintaxis:  
+        <audio>: define el reproductor de audio. 
+        controls: muestra los controles de reproducción, pausa y volumen.
+        <source>: especifica el archivo de audio.
+        El texto alternativo dentro de <audio> se muestra si el navegador no soporta audio.
+      -->
+      <audio controls>
+        <source src="podcast.mp3" type="audio/mpeg" />
+        Tu navegador no soporta el elemento audio.
+      </audio>
+
+      <!-- Video accesible: Se debe mostrar el video, proporcionar información y controles que puedan usar personas con discapacidad visual, auditiva o motora.
+      Sintaxis: 
+        controls: Proporciona controles estándar accesibles para teclado y lectores de pantalla.
+        kind="captions": subtítulos con diálogos y sonidos relevantes.
+        srclang: idioma.
+        default: activa esa pista por defecto.
+      No utilizar: autoplay: El contenido que se reproduce automáticamente puede resultar molesto y dificultar el uso de lectores de pantalla. 
+      -->
+      <video controls width="640">
+        <source src="video.mp4" type="video/mp4" />
+        El navegador no soporta la reproducción de video.
+        <track
+          kind="captions"
+          src="subtitulos-es.vtt"
+          srclang="es"
+          label="Español"
+          default
+        />
+        <!-- Opcional -->
+      </video>
+
+      <!-- Tablas
+       Sintaxis: 
+        table: Define la tabla
+        caption: Título de la tabla
+        <tr> (Table Row): Representa una fila. Cada fila puede contener encabezados (<th>) o datos (<td>).
+        <th> (Table Header): Representa una celda de encabezado. Los navegadores suelen mostrarla en negrita y centrada. 
+        <td> (Table Data): Representa una celda de datos. Contiene los datos normales de la tabla.
+            -->
+      <table>
+        <caption>
+          Lista de empleados
+        </caption>
+        <tr>
+          <th>Nombre</th>
+          <th>Edad</th>
+        </tr>
+
+        <tr>
+          <td>Ana</td>
+          <td>25</td>
+        </tr>
+
+        <tr>
+          <td>Carlos</td>
+          <td>30</td>
+        </tr>
+      </table>
+
+      <!-- Barra de navegación (navigation bar o navbar): Sección que contiene enlaces para desplazarse entre las distintas páginas o secciones de un sitio. 
+      Sintaxis: 
+        <nav>: define una sección de navegación.
+        <a>: crea enlaces a otras páginas o secciones.
+        href: especifica el destino del enlace. 
+        aria-current="page": indica que es la página actual.
+      -->
+      <nav>
+        <a href="/" aria-current="page">Inicio</a>
+        <a href="/productos">Productos</a>
+        <a href="/servicios">Servicios</a>
+        <a href="/contacto">Contacto</a>
+      </nav>
+    </main>
+
+    <!-- Pie de página <footer>: Contiene información complementaria, como datos de contacto, derechos de autor, enlaces legales, redes sociales o información del autor. -->
+    <footer>
+      <p>Pie de página &copy; 2023</p>
+    </footer>
+  </body>
+</html>

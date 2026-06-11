@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Estructura base</title>
 </head>
+
 <body>
-    <header> 
-        <h1>Uso de etiquetas HTML</h1><!-- Encabezado de nivel 1 -->
-        <p>Etiquetas en HTML: Las tags, o etiquetas HTML, son códigos utilizados para dar instrucciones al navegador sobre cómo mostrar ese elemento.</p> <!--Parráfo: Breve introducción de la página -->
-        
+    <header>
+        <h1>Uso de etiquetas HTML</h1> <!-- Encabezado de nivel 1 -->
+        <p>Etiquetas en HTML: Las tags, o etiquetas HTML, son códigos utilizados para dar instrucciones al navegador
+            sobre cómo mostrar ese elemento.</p> <!--Parráfo: Breve introducción de la página -->
     </header>
-    <main>
-         <h2>Encabezado de nivel 2</h2> 
+
+    <main> <!-- Información principal de la página -->
+        <h2>Encabezado de nivel 2</h2>
         <p>Ejemplo del uso jerarquico de etiquetas para encabezados </p>
 
         <h2>Segundo encabezado de nivel 2</h2>
@@ -20,10 +23,10 @@
         <p>main: Contenido principal único (equivalente al contenido central de un libro). </p>
 
         <h2>Tercer encabezado de nivel 2</h2>
-        <h2>Tercer Encabezado de nivel 2</h2>
 
-        <p>Pasatiempos</p>
-        <ul><!---Lista desordenada-->
+        <p>Pasatiempos:</p>
+        <ul> <!-- Lista desordenada -->
+            <li>Leer</li> <!-- Primer elementos de la lista -->
             <li>Juegos de mesa</li>
                 <ul>
                     <li>Ajedrez</li>
@@ -34,35 +37,26 @@
             <li>Correr</li>
         </ul>
 
-        <p>Otros Pasatiempos</p>
-        <ol><!---Lista desordenada-->
-            <li>Hacer ejercicios</li>
-            <li>Ver ánime</li>
-                <ol>
-                    <li>Ataque de titanes</li>
+        <p>Otros pasatiempos:</p>
+        <ol> <!-- Lista ordenada -->
+            <li>Hacer ejercicio</li> <!-- Primer elemento de la lista -->
+            <li>Nadar</li> <!-- Segundo elemento de la lista -->
+            <li>Anime:</li>
+                <ol type="a" start="2"> <!-- Atributo type: define el tipo de lista ordenada y el atributo start define dónde inicia la lista -->
+                    <li>Ataque a los titanes</li>
                     <li>One piece</li>
                     <li>Naruto</li>
+                    <li>Frieren</li>
                 </ol>
             <li>Cocinar</li>
         </ol>
+        
+        <!-- Ejercicio: Hacer una lista de al menos 3 niveles -->
 
-        <p>Actividades que más me gustan</p>
-        <ol>
-            <li>Hacer ejercicios:</li>
-                <ul>
-                    <li>Correr</li>
-                    <li>Levantar pesas</li>
-                    <li>Hacer cardio</li>
-                </ul>
-            <li>Salir con mis amigas a lugares como:</li>
-                <ul>
-                    <li>Cine:</li>
-                        <ol type="a">
-                            <li>Puede ser teatro</li>
-                            <li>Pueder ser alguna de nuestras casas</li>
-                        </ol>
-                </ul>
-        </ol>
+        <img src="assets\software engineering.png" alt="Elemento es decorativo (no aporta información)">
+        <img src="assets\areas académicas.jpg" alt="Áreas académicas de la escuela: programación, seguridad, procesos y calidad de software">
+
+
     </main>
 </body>
 </html>

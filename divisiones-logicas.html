@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etiquetas de divisiones lógicas</title>
+  </head>
+  <body>
+    <header>
+      <h1>Etiquetas de divisiones lógicas</h1>
+      <p>
+        Elementos de HTML que permiten organizar el contenido de una página
+        según su significado y función, en lugar de hacerlo únicamente por
+        apariencia visual.
+      </p>
+    </header>
+    <section>
+      <h2>
+        Error: Construir toda la página con
+        <div></div>
+      </h2>
+      <h3>Ejemplo (mala práctica)</h3>
+      <div id="encabezado">
+        <h1>Mi sitio</h1>
+      </div>
+
+      <div id="menu">...</div>
+
+      <div id="contenido">...</div>
+
+      <div id="pie">...</div>
+
+      <!-- Aunque funciona, el navegador no sabe qué representa cada sección.-->
+    </section>
+
+    <section>
+      <h2>Etiquetas semánticas o divisiones lógicas</h2>
+      <p>
+        HTML5 introdujo etiquetas que describen claramente el propósito de cada
+        área.
+      </p>
+
+      <h3>Ejemplo</h3>
+
+      <header> <!-- Representa el encabezado de una página o sección. -->
+        <h1>Mi sitio</h1>
+
+        <nav aria-label="Navegación principal"> <!-- Representa una zona de navegación. -->
+          <a href="/">Inicio</a>
+          <a href="/blog">Blog</a>
+          <a href="/contacto">Contacto</a>
+        </nav>
+      </header>
+
+      <main> <!--Contiene el contenido principal del documento.-->
+        <section> <!--Agrupa contenido relacionado bajo un mismo tema.-->
+          <h2>Servicios</h2>
+
+          <p>Desarrollo Web</p>
+          <p>Diseño UX</p>
+        </section>
+
+        <article> <!--Representa contenido independiente. -->
+          <h2>¿Qué es HTML?</h2>
+
+          <p>HTML es el lenguaje estándar de la web...</p>
+        </article>
+
+        <aside> <!--Contiene información complementaria.-->
+          <h2>Recursos relacionados</h2>
+
+          <ul>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </aside>
+      </main>
+
+      <footer> <!--Representa el pie de página.-->
+        <p>© 2026 Mi sitio</p>
+      </footer>
+    </section>
+  </body>
+</html>
