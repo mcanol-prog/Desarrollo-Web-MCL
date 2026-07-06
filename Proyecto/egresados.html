@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gestión de Egresados</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+
+    <header>
+
+        <h1>Sistema de Gestión de Egresados</h1>
+
+        <p>Departamento de Bienestar Estudiantil</p>
+
+        <p>Universidad CENFOTEC</p>
+
+    </header>
+
+    <!-- Menú -->
+
+    <nav>
+
+        <a href="index.html">Inicio</a>
+
+        <a href="login.html">Iniciar Sesión</a>
+
+        <a href="perfil.html">Perfil</a>
+
+        <a href="egresados.html">Egresados</a>
+
+        <a href="carreras.html">Carreras</a>
+
+    </nav>
+
+    <main>
+
+        <section class="perfil">
+
+            <h2>Registro de Egresados</h2>
+
+            <img src="img/registro.jpg" alt="Registro de egresados" class="banner-perfil">
+
+            <p class="descripcion">
+
+                Complete el siguiente formulario para registrar un nuevo egresado en el sistema.
+
+            </p>
+
+            <form id="formEgresado">
+
+                <!-- Información Personal -->
+
+                <section class="tarjeta">
+
+                    <h3>Información Personal</h3>
+
+                    <label for="identificacion">Identificación</label>
+
+                    <input type="text" id="identificacion" required>
+
+                    <label for="nombre">Nombre Completo</label>
+
+                    <input type="text" id="nombre" required>
+
+                    <label for="correo">Correo Electrónico</label>
+
+                    <input type="email" id="correo" required>
+
+                    <label for="telefono">Teléfono</label>
+
+                    <input type="tel" id="telefono" required>
+
+                </section>
+
+                <!-- Información Académica -->
+
+                <section class="tarjeta">
+
+                    <h3>Información Académica</h3>
+
+                    <label for="carrera">Carrera</label>
+
+                    <select id="carrera" required>
+
+                        <option value="">Seleccione una carrera</option>
+
+                        <option>Ingeniería del Software</option>
+
+                        <option>Ciberseguridad</option>
+
+                        <option>Ciencia de Datos</option>
+
+                    </select>
+
+                    <label for="fecha">Fecha de Registro</label>
+
+                    <input type="date" id="fecha" required>
+
+                    <label for="empresa">Empresa donde labora</label>
+
+                    <input type="text" id="empresa" required>
+
+                </section>
+
+                <button type="submit" class="btn">
+
+                    Guardar Registro
+
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>Sistema de Gestión de Egresados</p>
+
+        <p>Universidad CENFOTEC - 2026</p>
+
+    </footer>
+
+    <script src="js/egresados.js"></script>
+
+</body>
+
+</html>
