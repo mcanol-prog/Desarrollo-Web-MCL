@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #eef4fa;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: #f4f4f4;
+    padding:20px;
+    width:100%;
+}
+/* ===== HEADER ===== */
+header{ /*titulo: gestion de egresados*/
+    background-color:#003366;
+    color: white;
+    text-align:center;
+    padding:20px;
+    width:100%;
+}
+
+/* ===== MENÚ ===== */
+nav{
+    background-color: white;
+    text-align:center;
+    padding:20px;
+    width:100%;
+}
+
+nav a{ /* pagina principal, perfil, egresados, carreras */
+    color: #999;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
+
+nav a:hover{ /*color que se muestra al hacer click en el menú*/
+    color:rgb(0, 17, 255);
+}
+
+.egresados{ /*esto afecta todo el main de gestion-egresados*/
+    text-align: center;
+    max-width:1000px;
+    margin:30px auto;
+    padding:0 15px;
+}
+.egresados h2{ /*esto afecta todos los h2 de egresados*/
+    text-align:center;
+    color:#003366;
+    margin-bottom:20px;
+}
+
+.egresados h3{
+    text-align: center;
+    color:#003366;
+    margin-bottom:20px;
+}
+
+img{
+    width:100%;
+    max-width:1000px;
+    border-radius:10px;
+    margin:20px 0;
+    text-align: center;
+}
+
+.egresados .tarjeta{/*esto afecta lo que encierra a los inputs, osea la caja principal*/
+    background-color:white;
+    padding:20px;/*esto es lo alto de la caja*/
+    margin-bottom:25px;
+    border-radius:10px;
+    border-left:6px solid #003366;
+    box-shadow:0px 2px 8px rgba(0,0,0,0.15);/*sombreado de las cajas*/
+    text-align:left;
+    width:100%;
+    gap: 12px;
+}
+
+.egresados form{ /*la forma dada a los inputs*/
+    display:flex;
+    flex-direction:column;
+    
+}
+.egresados label{
+    font-weight:bold;/*para hacer mas negrita la letra*/
+    margin-top:10px;/*grosor para el margen*/
+    width: 50%;
+}
+
+.label-requerido{
+    color: red;
+    font-weight: normal;
+}
+
+.egresados input{
+   /*font-weight: bold;
+    padding: 5px;
+    border:1px solid #999;
+    border-radius:4px;*/
+
+    margin-top: 0.2em;
+    margin-bottom: 1.2em;
+    width: 100%;
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    background: #ffffff;
+    color: black;
+}
+
+.description{
+    margin-bottom: 1.8rem;
+    font-size: 0.95rem;
+}
+
+.egresados select{
+   font-weight:bold;/*para hacer mas negrita la letra*/
+    margin-top:10px;/*grosor para el margen*/
+}
+
+.egresados button{
+    width:100%;
+    max-width:250px;
+    margin:20px auto 0 auto;
+    background-color:#003366;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.egresados button:hover{
+    background-color:#00509E;
+}
+
+.input-error { 
+    border: 5px solid #cc0000 !important; /* Rojo visible e importante */
+    background-color: #fff0f0; /* Fondo sutil rojizo opcional para que resalte más */
+}
