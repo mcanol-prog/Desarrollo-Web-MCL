@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Perfil del Egresado</title>
+
+    <link rel="stylesheet" href="css/gestion-egresados.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Sistema de Gestión de Egresados</h1>
+
+        <p>Universidad CENFOTEC</p>
+
+    </header>
+
+
+    <nav>
+
+        <a href="inicio-egresado.html">Inicio</a>
+
+
+    </nav>
+
+
+    <main class="perfil1">
+
+        <section>
+
+            <h2>Consulta de Perfil</h2>
+
+            <p class="descripcion">
+
+                Ingrese su correo electrónico o nombre completo
+                para consultar la información registrada.
+
+            </p>
+
+        </section>
+
+
+        <!-- BUSCADOR -->
+
+        <section class="tarjeta">
+
+            <form id="formConsultaPerfil" novalidate>
+
+                <label for="busqueda">
+
+                    Correo electrónico o nombre completo:
+
+                </label>
+
+                <input
+                    type="text"
+                    id="busqueda"
+                    placeholder="Ingrese su correo o nombre completo">
+
+                <button type="submit">
+
+                    Consultar Perfil
+
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- INFORMACIÓN PERSONAL -->
+
+        <section class="tarjeta">
+
+            <h3>Información Personal</h3>
+
+            <div id="informacionPersonal">
+
+                <p>
+                    Realice una búsqueda para consultar el perfil.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- INFORMACIÓN PROFESIONAL -->
+
+        <section class="tarjeta">
+
+            <h3>Información Profesional</h3>
+
+            <div id="informacionProfesional">
+
+                <p>
+                    Realice una búsqueda para consultar el perfil.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- TÍTULOS -->
+
+        <section class="tarjeta">
+
+            <h3>Títulos Obtenidos</h3>
+
+            <div id="titulosObtenidos">
+
+                <p>
+                    Realice una búsqueda para consultar los títulos.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- CARRERAS -->
+
+        <section class="tarjeta">
+
+            <h3>Carreras Asociadas</h3>
+
+            <div id="carrerasAsociadas">
+
+                <p>
+                    Realice una búsqueda para consultar las carreras.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ESCUELAS -->
+
+        <section class="tarjeta">
+
+            <h3>Escuelas Asociadas</h3>
+
+            <div id="escuelasAsociadas">
+
+                <p>
+                    Realice una búsqueda para consultar las escuelas.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>Sistema de Gestión de Egresados</p>
+
+        <p>Universidad CENFOTEC - 2026</p>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="js/perfil.js"></script>
+
+</body>
+
+</html>

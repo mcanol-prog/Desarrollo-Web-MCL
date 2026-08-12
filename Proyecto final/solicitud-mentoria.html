@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Solicitud de Mentoría</title>
+
+    <link rel="stylesheet" href="css/gestion-egresados.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Sistema de Gestión de Egresados</h1>
+
+        <p>Departamento de Egresados</p>
+
+        <p>Universidad CENFOTEC</p>
+
+    </header>
+
+    <nav>
+
+        <a href="inicio-egresado.html">Inicio</a>
+
+    </nav>
+
+    <main class="solicitud">
+
+        <section>
+
+            <h2>Solicitud de Mentoría</h2>
+
+            <p class="descripcion">
+
+                Complete la solicitud para participar en una oportunidad
+                de mentoría.
+
+            </p>
+
+        </section>
+
+        <form id="formSolicitud" novalidate>
+
+            <section class="tarjeta">
+
+                <label for="objetivo">
+                    Objetivo de la mentoría:
+                </label>
+
+                <textarea
+                    id="objetivo"
+                    required>
+                </textarea>
+
+                <label for="oportunidad">
+                    Oportunidad de Mentoría:
+                </label>
+
+                <select id="oportunidad" required>
+
+                    <option value="">
+                        Seleccione una oportunidad
+                    </option>
+
+                    <option>
+                        Mentoría en Desarrollo de Software
+                    </option>
+
+                    <option>
+                        Mentoría en Ciberseguridad
+                    </option>
+
+                    <option>
+                        Mentoría en Ciencia de Datos
+                    </option>
+
+                </select>
+
+                <label for="comentarios">
+                    Comentarios adicionales:
+                </label>
+
+                <textarea id="comentarios"></textarea>
+
+            </section>
+
+            <button type="submit">
+
+                Enviar Solicitud
+
+            </button>
+
+        </form>
+
+    </main>
+
+    <footer class="soli">
+
+        <p>
+            Sistema de Gestión de Egresados
+        </p>
+
+        <p>
+            Universidad CENFOTEC - 2026
+        </p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="js/solicitud-mentoria.js"></script>
+
+</body>
+
+</html>

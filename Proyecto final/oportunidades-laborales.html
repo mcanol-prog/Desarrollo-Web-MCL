@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Oportunidades Laborales</title>
+
+    <link rel="stylesheet" href="css/gestion-egresados.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Sistema de Gestión de Egresados</h1>
+
+        <p>Departamento de Egresados</p>
+
+        <p>Universidad CENFOTEC</p>
+
+    </header>
+
+    <nav>
+
+        <a href="inicio-egresado.html">Inicio</a>
+
+    </nav>
+
+    <main class="perfil">
+
+        <section>
+
+            <h2>Oportunidades Laborales</h2>
+
+            <p class="descripcion">
+
+                Consulte las oportunidades laborales publicadas
+                por la Universidad.
+
+            </p>
+
+        </section>
+
+        <section class="tarjeta">
+
+            <h3>Buscar oportunidades</h3>
+
+            <form id="formBuscar">
+
+                <label for="empresa">
+                    Empresa:
+                </label>
+
+                <input type="text" id="empresa">
+
+                <label for="area">
+                    Área profesional:
+                </label>
+
+                <input type="text" id="area">
+
+                <label for="modalidad">
+                    Modalidad:
+                </label>
+
+                <select id="modalidad">
+
+                    <option value="">Todas</option>
+
+                    <option>Presencial</option>
+
+                    <option>Remota</option>
+
+                    <option>Híbrida</option>
+
+                </select>
+
+                <label for="ubicacion">
+                    Ubicación:
+                </label>
+
+                <input type="text" id="ubicacion">
+
+                <button type="submit">
+
+                    Buscar
+
+                </button>
+
+            </form>
+
+        </section>
+
+        <section class="tarjeta">
+
+            <h3>Oportunidades disponibles</h3>
+
+            <div id="resultados">
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            Sistema de Gestión de Egresados
+        </p>
+
+        <p>
+            Universidad CENFOTEC - 2026
+        </p>
+
+    </footer>
+
+    <script src="js/oportunidades-laborales.js"></script>
+
+</body>
+
+</html>

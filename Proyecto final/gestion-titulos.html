@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gestión de Títulos</title>
+
+    <link rel="stylesheet" href="css/gestion-registro.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Sistema de Gestión de Egresados</h1>
+
+        <p>Universidad CENFOTEC</p>
+
+    </header>
+
+
+    <nav>
+
+        <a href="inicio-registro.html">Inicio</a>
+
+    </nav>
+
+
+    <main class="egresados">
+
+        <section>
+
+            <h2>Gestión de Títulos</h2>
+
+            <p class="descripcion">
+
+                Registre la información académica de los egresados.
+
+            </p>
+
+        </section>
+
+
+        <section class="tarjeta">
+
+            <h3>Registrar Título</h3>
+
+
+            <form id="formtitulo" novalidate>
+
+
+                <!-- IDENTIFICACIÓN DEL EGRESADO -->
+
+                <label for="cedulaEgresado">
+
+                    Identificación del egresado:
+
+                </label>
+
+                <input
+                    type="text"
+                    id="cedulaEgresado"
+                    placeholder="Ingrese la identificación del egresado">
+
+
+
+
+                <!-- TIPO DE PROGRAMA -->
+
+                <label for="tipo">
+
+                    Tipo de programa:
+
+                </label>
+
+                <select id="tipo">
+
+                    <option value="">
+                        Seleccione una opción
+                    </option>
+
+                    <option value="Técnico">
+                        Técnico
+                    </option>
+
+                    <option value="Diplomado">
+                        Diplomado
+                    </option>
+
+                    <option value="Bachillerato">
+                        Bachillerato
+                    </option>
+
+                    <option value="Licenciatura">
+                        Licenciatura
+                    </option>
+
+                    <option value="Maestría">
+                        Maestría
+                    </option>
+
+                </select>
+
+
+
+
+                <!-- CARRERA -->
+
+                <label for="carrera">
+
+                    Carrera:
+
+                </label>
+
+                <input
+                    type="text"
+                    id="carrera"
+                    placeholder="Ingrese la carrera">
+
+
+
+
+                <!-- ESCUELA -->
+
+                <label for="escuela">
+
+                    Escuela académica:
+
+                </label>
+
+                <input
+                    type="text"
+                    id="escuela"
+                    placeholder="Ingrese la escuela">
+
+
+
+
+                <!-- AÑO -->
+
+                <label for="annio">
+
+                    Año de graduación:
+
+                </label>
+
+                <input
+                    type="number"
+                    id="annio"
+                    placeholder="Ejemplo: 2026"
+                    min="1900"
+                    max="2100">
+
+
+
+
+                <!-- ESTADO -->
+
+                <label for="estado">
+
+                    Estado del título:
+
+                </label>
+
+                <select id="estado">
+
+                    <option value="">
+                        Seleccione una opción
+                    </option>
+
+                    <option value="Activo">
+                        Activo
+                    </option>
+
+                    <option value="Finalizado">
+                        Finalizado
+                    </option>
+
+                    <option value="Pendiente">
+                        Pendiente
+                    </option>
+
+                </select>
+
+
+                <button type="submit">
+
+                    Registrar Título
+
+                </button>
+
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>Sistema de Gestión de Egresados</p>
+
+        <p>Universidad CENFOTEC - 2026</p>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="js/gestion-titulos.js"></script>
+
+</body>
+
+</html>

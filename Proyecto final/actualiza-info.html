@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Actualizar Información</title>
+
+    <link rel="stylesheet" href="css/gestion-egresados.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Sistema de Gestión de Egresados</h1>
+
+        <p>Departamento de Egresados</p>
+
+        <p>Universidad CENFOTEC</p>
+
+    </header>
+
+    <nav>
+
+        <a href="inicio-egresado.html">Inicio</a>
+
+    </nav>
+
+    <main class="perfil">
+
+        <section>
+
+            <h2>Actualizar Información Profesional</h2>
+
+            <img class="update" src="img/actualiza.jpg"
+                 alt="Egresados de la Universidad"
+                 class="banner-perfil">
+
+            <p class="descripcion">
+
+                Mantenga actualizada su información profesional.
+
+            </p>
+
+        </section>
+
+        <form id="formActualizar" novalidate>
+
+            <section class="tarjeta">
+
+                <h3>Información Profesional</h3>
+
+                <label for="correo">Correo personal:</label>
+
+                <input type="email" id="correo" required>
+
+                <label for="telefono">Teléfono:</label>
+
+                <input type="tel" id="telefono" required>
+
+                <label for="empresa">Empresa actual:</label>
+
+                <input type="text" id="empresa" required>
+
+                <label for="puesto">Puesto actual:</label>
+
+                <input type="text" id="puesto" required>
+
+                <label for="area">Área profesional:</label>
+
+                <input type="text" id="area" required>
+
+                <label for="linkedin">Perfil de LinkedIn:</label>
+
+                <input type="url" id="linkedin">
+
+                <label for="portafolio">Portafolio profesional:</label>
+
+                <input type="url" id="portafolio">
+
+            </section>
+
+            <button type="submit" id="actualizar">
+
+                Actualizar Información
+
+            </button>
+
+        </form>
+
+    </main>
+
+    <footer>
+
+        <p>Sistema de Gestión de Egresados</p>
+
+        <p>Universidad CENFOTEC - 2026</p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="js/actualiza-info.js"></script>
+
+</body>
+
+</html>

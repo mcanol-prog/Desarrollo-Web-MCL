@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Gestión de Mentorías</title>
+
+    <link rel="stylesheet" href="css/gestiones-bienestar.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="contenedor">
+
+            <div class="logo">
+
+                <h2>Bienestar Estudiantil</h2>
+
+            </div>
+
+        </div>
+
+    </header>
+    <nav>
+
+        <a class="btn-login" href="inicio-bienestar.html">Inicio</a>
+
+    </nav>
+    <main class="mentorias">
+
+        <section>
+
+            <h2>Gestión de Mentorías</h2>
+
+            <p class="descripcion">
+
+                Gestione solicitudes, registre mentorías y consulte
+                las mentorías registradas.
+
+            </p>
+
+        </section>
+
+        <section class="tarjeta">
+
+            <h3>Solicitudes de Mentoría</h3>
+
+            <div id="listaSolicitudes">
+
+            </div>
+
+        </section>
+
+        <section class="tarjeta">
+
+            <h3>Registrar Mentoría</h3>
+
+            <form id="formMentoria" novalidate>
+
+                <label for="mentor">Mentor:</label>
+
+                <input type="text" id="mentor" required>
+
+                <label for="fechaInicio">
+                    Fecha de inicio:
+                </label>
+
+                <input
+                    type="date"
+                    id="fechaInicio"
+                    required>
+
+                <label for="fechaFinal">
+                    Fecha de finalización:
+                </label>
+
+                <input
+                    type="date"
+                    id="fechaFinal"
+                    required>
+
+                <label for="estado">Estado:</label>
+
+                <select id="estado" required>
+
+                    <option value="">
+                        Seleccione un estado
+                    </option>
+
+                    <option>Pendiente</option>
+
+                    <option>Activa</option>
+
+                    <option>Finalizada</option>
+
+                    <option>Cancelada</option>
+
+                </select>
+
+                <label for="observaciones">
+                    Observaciones:
+                </label>
+
+                <textarea id="observaciones"></textarea>
+
+                <button type="submit">
+
+                    Registrar Mentoría
+
+                </button>
+
+            </form>
+
+        </section>
+
+        <section class="tarjeta">
+
+            <h3>Mentorías Registradas</h3>
+
+            <div id="listaMentorias">
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            Universidad CENFOTEC - 2026.
+            Todos los derechos reservados
+        </p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="js/gestion-mentorias.js"></script>
+
+</body>
+
+</html>

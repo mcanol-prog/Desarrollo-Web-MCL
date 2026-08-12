@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Consulta de Egresados</title>
+
+    <link rel="stylesheet" href="css/gestiones-bienestar.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="contenedor">
+
+            <div class="logo">
+
+                <h2>Bienestar Estudiantil</h2>
+
+            </div>
+
+        </div>       
+
+    </header>
+
+    <nav>
+
+        <a class="btn-login" href="inicio-bienestar.html">Inicio</a>
+
+    </nav> 
+
+    <main class="consulta">
+
+        <section>
+
+            <h2>Consulta de Egresados</h2>
+
+            <p class="descripcion">
+
+                Consulte los egresados utilizando los filtros disponibles.
+
+            </p>
+
+        </section>
+
+        <section class="tarjeta">
+
+            <form id="formConsulta">
+
+                <label for="nombre">Nombre:</label>
+
+                <input type="text" id="nombre">
+
+                <label for="carrera">Carrera:</label>
+
+                <input type="text" id="carrera">
+
+                <label for="escuela">Escuela:</label>
+
+                <input type="text" id="escuela">
+
+                <label for="tipo">Tipo de programa:</label>
+
+                <select id="tipo">
+
+                    <option value="">Todos</option>
+
+                    <option>Técnico</option>
+
+                    <option>Bachillerato</option>
+
+                    <option>Maestría</option>
+
+                </select>
+
+                <label for="anio">Año de graduación:</label>
+
+                <input type="number" id="anio">
+
+                <button type="submit">
+
+                    Consultar
+
+                </button>
+
+            </form>
+
+        </section>
+
+        <section class="tarjeta">
+
+            <h3>Resultados</h3>
+
+            <div id="resultados"></div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            Universidad CENFOTEC - 2026. Todos los derechos reservados
+        </p>
+
+    </footer>
+
+    <script src="js/consulta-egresados.js"></script>
+
+</body>
+
+</html>

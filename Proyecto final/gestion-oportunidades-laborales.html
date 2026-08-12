@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gestión de Oportunidades Laborales</title>
+
+    <link rel="stylesheet" href="css/gestiones-bienestar.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="contenedor">
+
+            <div class="logo">
+
+                <h2>Bienestar Estudiantil</h2>
+
+            </div>
+
+        </div>
+
+    </header>
+    <nav>
+
+        <a class="btn-login" href="inicio-bienestar.html">Inicio</a>
+
+    </nav>
+    <main class="oportunidades">
+
+        <section>
+
+            <h2>Gestión de Oportunidades Laborales</h2>
+
+            <p class="descripcion">
+
+                Registre y administre oportunidades laborales
+                para los egresados.
+
+            </p>
+
+        </section>
+
+        <section class="tarjeta">
+
+            <form id="formOportunidad" novalidate>
+                <h3>Registrar Oportunidad Laboral</h3>
+
+                <label for="empresa">Empresa:</label>
+
+                <input type="text" id="empresa" required>
+
+                <label for="puesto">Puesto:</label>
+
+                <input type="text" id="puesto" required>
+
+                <label for="descripcion">Descripción:</label>
+
+                <textarea id="descripcion" required></textarea>
+
+                <label for="area">Área profesional:</label>
+
+                <input type="text" id="area" required>
+
+                <label for="modalidad">Modalidad:</label>
+
+                <select id="modalidad" required>
+
+                    <option value="">
+                        Seleccione una modalidad
+                    </option>
+
+                    <option>Presencial</option>
+
+                    <option>Remota</option>
+
+                    <option>Híbrida</option>
+
+                </select>
+
+                <label for="ubicacion">Ubicación:</label>
+
+                <input type="text" id="ubicacion" required>
+
+                <label for="fechaPublicacion">
+                    Fecha de publicación:
+                </label>
+
+                <input type="date" id="fechaPublicacion" required>
+
+                <label for="fechaVencimiento">
+                    Fecha de vencimiento:
+                </label>
+
+                <input type="date" id="fechaVencimiento" required>
+
+                <label for="contacto">
+                    Correo o enlace de contacto:
+                </label>
+
+                <input type="text" id="contacto" required>
+
+                <label for="estado">Estado:</label>
+
+                <select id="estado" required>
+
+                    <option value="">
+                        Seleccione un estado
+                    </option>
+
+                    <option>Activa</option>
+
+                    <option>Vencida</option>
+
+                    <option>Cancelada</option>
+
+                </select>
+
+            <button type="submit">
+
+                Registrar Oportunidad
+
+            </button>
+
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            Universidad CENFOTEC - 2026.
+            Todos los derechos reservados
+        </p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="js/gestion-oportunidades-laborales.js"></script>
+
+</body>
+
+</html>

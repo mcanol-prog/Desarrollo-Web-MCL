@@ -1,0 +1,279 @@
+/* ===== ESTILOS GENERALES ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:#f4f4f4;
+}
+
+/* ===== HEADER ===== */
+header{
+    background-color:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+    width:100%;
+}
+
+/* ===== MENÚ ===== */
+nav{
+    background-color:#00509E;
+    text-align:center;
+    padding:12px;
+    width:100%;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
+
+nav a:hover{ /*color que se muestra al hacer click en el menú*/
+    color:rgb(0, 17, 255);
+}
+
+/* ===== SECCIONES ===== */
+section{
+    padding:30px;
+    width:100%;
+}
+
+section img{
+    width:100%;
+    max-width:700px;
+    border-radius:10px;
+    margin:20px 0;
+}
+
+button, .btn{
+    background-color:#003366;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    margin-top:20px;
+    display:block;
+}
+
+button:hover, .btn:hover{
+    background-color:#00509E;
+}
+
+footer{
+    background-color:#003366;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+    width:100%;
+}
+
+/* ==========================
+   LOGIN
+========================== */
+.contenedor-login{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    width:100%;
+}
+
+.login{
+    background-color:white;
+    width:100%;
+    max-width:400px;
+    padding:30px;
+    border:1px solid #cccccc;
+    border-radius:10px;
+}
+
+.login h2{
+    text-align:center;
+    color:#003366;
+    margin-bottom:10px;
+}
+
+.login p{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.login label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+.login input,
+.login select{
+    width:100%;
+    padding:10px;
+    border:1px solid #999;
+    border-radius:5px;
+}
+
+/* ==========================
+   PERFIL DEL EGRESADO
+========================== */
+.perfil{
+    width:100%;
+    max-width:1000px;
+    margin:30px auto;
+    padding:0 15px;
+}
+
+.perfil h2{
+    text-align:center;
+    color:#003366;
+    margin-bottom:20px;
+}
+
+.banner-perfil{
+    width:100%;
+    max-width:700px;
+    display:block;
+    margin:auto;
+    border-radius:10px;
+}
+
+.descripcion{
+    text-align:center;
+    margin:20px 0 30px 0;
+    font-size:16px;
+}
+
+.tarjeta{/*afecta gestion-egresados*/
+    background-color:white;
+    padding:20px;
+    margin-bottom:25px;
+    border-radius:10px;
+    border-left:6px solid #003366;
+    box-shadow:0px 2px 8px rgba(0,0,0,0.15);
+    text-align: auto; /*tenia left*/
+    width:100%; /*tenia 100*/
+}
+
+.tarjeta h3{
+    color:#003366;
+    margin-bottom:15px;
+}
+
+.tarjeta p{
+    margin:8px 0;
+    font-size:16px;
+}
+
+/* ===== TABLAS ===== */
+table{
+    width:150%;/*tenia 100*/
+    border-collapse:collapse;
+    margin-top:15px;
+    overflow-x:auto;
+    display:block;
+}
+
+th{
+    background-color:#003366;
+    color:white;
+    padding:12px;
+}
+
+td{
+    border:1px solid #cccccc;
+    padding:12px;
+    text-align:center;
+}
+
+tr:nth-child(even){
+    background-color:#f2f2f2;
+}
+
+/* Tablas en Carreras */
+.carreras table{
+    width:100%;/*tenia 100*/
+    border-collapse:collapse;
+    margin-top:15px;
+    overflow-x:auto;
+    display:block;
+}
+
+.carreras th{
+    background-color:#003366;
+    color:white;
+    padding:12px;
+}
+
+.carreras td{
+    border:1px solid #cccccc;
+    padding: 12px;/*tenia 12*/
+    text-align:center;
+}
+
+.carreras tr:nth-child(even){
+    background-color:#f2f2f2;
+}
+
+/* ==========================
+   DISEÑO RESPONSIVO
+========================== */
+@media (max-width:768px){
+    .perfil, .carreras{
+        width:95%;
+    }
+
+    header h1{
+        font-size:24px;
+    }
+
+    nav{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    nav a{
+        margin:8px 0;
+    }
+
+    .banner-perfil{
+        width:100%;
+    }
+
+    .tarjeta{
+        padding:20px;/*tenia 15px*/
+    }
+
+    table{
+        font-size:14px;
+    }
+
+    button, .btn, .carreras button{
+        width:100%;
+        max-width:250px;
+        margin:auto;
+    }
+}
+
+@media (max-width:480px){
+    header h1{
+        font-size:20px;
+    }
+
+    .tarjeta h3, .tarjeta h2, .carreras h2{
+        font-size:18px;
+    }
+
+    table th, table td, .carreras th, .carreras td{
+        font-size:12px;
+        padding:8px;
+    }
+}

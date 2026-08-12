@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Importar Egresados</title>
+
+    <link rel="stylesheet" href="css/gestion-registro.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Sistema de Gestión de Egresados</h1>
+
+        <p>Departamento de Registro</p>
+
+        <p>Universidad CENFOTEC</p>
+
+    </header>
+
+    <nav>
+
+        <a href="inicio-registro.html">Inicio</a>
+
+    </nav>
+
+    <main class="egresados">
+
+        <section>
+
+            <h2>Importar Egresados</h2>
+
+            <img class="impor" src="img/csv.jpg"
+                 alt="Importación de registros de egresados"
+                 class="banner-perfil">
+
+            <p class="descripcion">
+                Seleccione un archivo CSV para importar registros de egresados.
+            </p>
+
+        </section>
+
+        <section class="tarjeta">
+
+            <form id="formImportar" novalidate>
+
+                <label for="archivo">Archivo CSV:</label>
+
+                <span aria-hidden="true" class="label-requerido">*</span>
+
+                <input
+                    type="file"
+                    id="archivo"
+                    accept=".csv"
+                    required>
+
+                <button type="submit" id="importar">
+
+                    Importar Egresados
+
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>Sistema de Gestión de Egresados</p>
+
+        <p>Universidad CENFOTEC - 2026</p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="js/importar-egresados.js"></script>
+
+</body>
+
+</html>

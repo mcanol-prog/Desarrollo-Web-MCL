@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Registro de Mentor</title>
+
+    <link rel="stylesheet" href="css/gestion-egresados.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Sistema de Gestión de Egresados</h1>
+
+        <p>Departamento de Egresados</p>
+
+        <p>Universidad CENFOTEC</p>
+
+    </header>
+
+    <nav>
+
+        <a href="inicio-egresado.html">Inicio</a>
+
+    </nav>
+
+    <main class="perfil">
+
+        <section>
+
+            <h2>Registro como Mentor</h2>
+
+            <p class="descripcion">
+
+                Regístrese voluntariamente como mentor.
+
+            </p>
+
+        </section>
+
+        <form id="formMentor" novalidate>
+
+            <section class="tarjeta">
+
+                <h3>Información del Mentor</h3>
+
+                <label for="area">Área de experiencia:</label>
+
+                <input type="text" id="area" required>
+
+                <label for="especialidades">Especialidades:</label>
+
+                <input type="text" id="especialidades" required>
+
+                <label for="experiencia">Años de experiencia:</label>
+
+                <input type="number" id="experiencia" min="0" required>
+
+                <label for="disponibilidad">Disponibilidad:</label>
+
+                <select id="disponibilidad" required>
+
+                    <option value="">
+                        Seleccione disponibilidad
+                    </option>
+
+                    <option>Tiempo completo</option>
+
+                    <option>Medio tiempo</option>
+
+                    <option>Fines de semana</option>
+
+                </select>
+
+            </section>
+
+            <button type="submit">
+
+                Registrarme como Mentor
+
+            </button>
+
+        </form>
+
+    </main>
+
+    <footer class="mento">
+
+        <p>
+            Sistema de Gestión de Egresados
+        </p>
+
+        <p>
+            Universidad CENFOTEC - 2026
+        </p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="js/registro-mentor.js"></script>
+
+</body>
+
+</html>
